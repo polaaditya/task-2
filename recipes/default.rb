@@ -17,7 +17,7 @@ end
 
 # Configuring Icons
 template "#{node['iis']['docroot']}/icons/index.html" do
-  source 'icons.html.erb'
+  source 'index.html.erb'
   mode 0664
   sensitive true
   only_if { File.exist?("#{node['iis']['docroot']}/icons/index.html") }
