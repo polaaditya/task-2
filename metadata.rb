@@ -1,11 +1,15 @@
 name 'task'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Bharat'
+maintainer_email 'bharat@gmail.com'
 license 'All Rights Reserved'
 description 'Installs/Configures task'
 long_description 'Installs/Configures task'
 version '0.1.0'
 chef_version '>= 12.1' if respond_to?(:chef_version)
+
+#Dependent Cookbooks from SuperMarket
+depends "iis"
+depends "wsus-client"
 
 # The `issues_url` points to the location where issues for this cookbook are
 # tracked.  A `View Issues` link will be displayed on this cookbook's page when
